@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Red+Hat+Display:wght@500&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      min-height: 100vh;
+      background: hsl(225, 100%, 94%);
+      background-image: url(images/pattern-background-desktop.svg);
+    }
+    .container{
+      width: 350px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+      background: white ;
+    }
+   .container img{
+    width: 100%;
+    height: auto;
+   }
+   h2{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+   }
+   p{
+    text-align: center;
+    padding: 10px;
+    color:  hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+   }
+   button{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background:  hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    margin: 20px auto;
+    width: 80%; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   h4{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+   }
+   .order{
+    border: none;
+    background: none;
+    color: hsl(224, 23%, 55%);
+    font-weight:700;
+   cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: none;
+   }
+   .box img{
+    display: flex;
+    width: 40px;
+    height: 45px;
+    padding-top: 10px;
+   }
+   .box{
+    background: hsl(225, 100%, 98%);
+   border-radius: 12px;
+   display: flex;
+   padding: 2px;
+   font-family: 'Red Hat Display', sans-serif;
+   margin-left: 20px ;
+   margin-right: 20px;
+   padding: 10px;
+   }
+   .box h5{
+    padding-top: 5px;
+    padding-left: 20px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bolder;
+    font-size: 16px;
+   }
+   .box p{
+    padding-left: 20px;
+   }
+   .change{
+    margin: 10px auto;
+    padding-top: 5px;
+     padding-left: 50px;
+     color:  hsl(245, 75%, 52%);
+   }
+   @media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .box {
+    margin: 10px;
+  }
+}
+
+/* Media Query for screen width less than or equal to 480px */
+@media (max-width: 480px) {
+  .box {
+    padding: 5px;
+  }
+
+  .box h5 {
+    font-size: 14px;
+  }
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/illustration-hero.svg" alt="image">
+    <div class="content">
+      <h2>Order Summary</h2>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        <div class="box">
+          <img src="images/icon-music.svg" alt="music">
+          <div class="pay">
+         <h5>Annual Plan</h5> 
+         <p> $59.99/year</p>
+        </div>
+         <div class="change">
+          <a href="#">Change</a>
+        </div>
+        </div>
+        <button> Proceed to Payment</button>
+        <button class="order">Cancel Order</button>
+    </div>
+  </div>
+  
+</body>
+</html>
